@@ -80,7 +80,7 @@ function hideInfoImage() {
 }
 
 function imageRotation() {
-  const rotationDelay = 2 * 60 * 1000; // 2 minutos
+  const rotationDelay = 30 * 1000; // 2 minutos
   const imageDisplayTime = 30 * 1000; // 30 segundos
 
   setInterval(() => {
