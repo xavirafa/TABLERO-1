@@ -18,6 +18,9 @@ const motivationalMessages = [
   "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
   "La excelencia no es un acto, es un hábito.",
   "Haz lo que puedas, con lo que tengas, donde estés.",
+  "Evitar transcitar por las maquinas que esten en MONTAJE.",
+  "Recuerda realizar de forma continua y precisa las pruebas de CALIDAD.",
+  "Un pueblo que olvida su historia esta condenado a repetirla.",
 ];
 
 function updateTime() {
@@ -79,9 +82,15 @@ function hideInfoImage() {
   logo.classList.remove("hidden");
 }
 
+window.addEventListener("storage", function (event) {
+  if (event.key === "refreshMainPage") {
+    location.reload();
+  }
+});
+
 function imageRotation() {
-  const rotationDelay = 2 * 60 * 1000; // 2 minutos
-  const imageDisplayTime = 30 * 1000; // 30 segundos
+  let staticTime = localStorage.getItem("staticTime") || 5 * 60 * 1000; // 5 minutos por defecto
+  let imageTime = localStorage.getItem("imageTime") || 2 * 60 * 1000; // 2 minutos por defecto
 
   setInterval(() => {
     hideInfoImage(); // Oculta la imagen actual
@@ -89,8 +98,8 @@ function imageRotation() {
     showInfoImage(); // Muestra la nueva imagen actual y oculta la hora, el mensaje, la fecha y el día
     setTimeout(() => {
       hideInfoImage(); // Oculta la imagen actual y muestra la hora, el mensaje, la fecha y el día
-    }, imageDisplayTime);
-  }, rotationDelay);
+    }, imageTime);
+  }, staticTime);
 
   console.log('La función imageRotation se está ejecutando');
 }
