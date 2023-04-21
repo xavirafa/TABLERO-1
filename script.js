@@ -12,7 +12,6 @@ const motivationalMessages = [
   "El éxito no es cuestión de suerte, es cuestión de perseverancia.",
   "La innovación distingue a los líderes de los seguidores.",
   "Si te caes siete veces, levántate ocho.",
-  "El fracaso es simplemente la oportunidad de comenzar de nuevo, esta vez de manera más inteligente.",
   "La disciplina es el puente entre metas y logros.",
   "No se trata de tener más, sino de disfrutar más de lo que se tiene.",
   "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
@@ -89,8 +88,8 @@ window.addEventListener("storage", function (event) {
 });
 
 function imageRotation() {
-  let staticTime = localStorage.getItem("staticTime") || 5 * 60 * 1000; // 5 minutos por defecto
-  let imageTime = localStorage.getItem("imageTime") || 2 * 60 * 1000; // 2 minutos por defecto
+  let staticTime = localStorage.getItem("staticTime") || 2 * 60 * 1000; // 2 minutos por defecto
+  let imageTime = localStorage.getItem("imageTime") || 30 * 1000; // 30 segundos
 
   setInterval(() => {
     hideInfoImage(); // Oculta la imagen actual
