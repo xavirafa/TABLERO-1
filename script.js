@@ -3,11 +3,11 @@ let currentImageIndex = 0;
 
 const motivationalMessages = [
   // Agrega aquí tus mensajes motivacionales
-  "Haz hoy lo que otros no quieren, y tendrás mañana lo que otros no tienen.",
+  "Haz hoy lo que otros no quieren, y obtendras lo que otros no tienen.",
   "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
-  "El fracaso es la oportunidad de comenzar de nuevo con más inteligencia.",
+  "El fracaso es la oportunidad de comenzar con más inteligencia.",
   "La única forma de hacer un gran trabajo es amar lo que haces.",
-  "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.",
+  "La felicidad es la clave del éxito.",
   "No se trata de tener tiempo, sino de saber administrarlo.",
   "El éxito no es cuestión de suerte, es cuestión de perseverancia.",
   "La innovación distingue a los líderes de los seguidores.",
@@ -18,7 +18,7 @@ const motivationalMessages = [
   "La excelencia no es un acto, es un hábito.",
   "Haz lo que puedas, con lo que tengas, donde estés.",
   "Evitar transcitar por las maquinas que esten en MONTAJE.",
-  "Recuerda realizar de forma continua y precisa las pruebas de CALIDAD.",
+  "Recuerda realizar de forma continua las pruebas de CALIDAD.",
   "Un pueblo que olvida su historia esta condenado a repetirla.",
 ];
 

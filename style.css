@@ -63,7 +63,7 @@ body {
 
 h1 {
   color: #FFFFFF;
-  font-size: 15rem;
+  font-size: 17rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 50px 0 0 0;
@@ -71,7 +71,7 @@ h1 {
 
 p {
   color: #FFFFFF;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 5px 0;
@@ -83,7 +83,7 @@ p {
 
 #motivational-message {
   color: #F2A922; /* Puedes cambiar este color si deseas uno diferente */
-  font-size: 7rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad desde lejos */
+  font-size: 8rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad desde lejos */
   font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
   font-weight: 700; /* Ajusta el grosor de la fuente */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Mantiene la sombra de texto existente */
