@@ -1,0 +1,81 @@
+.container {
+  max-width: 1200px; /* ajusta el valor a la anchura deseada */
+  margin: 0 auto; /* añade un margen automático */
+}
+
+body, html {
+  height: 100%;
+  background: #F2F2F2;
+  position: relative;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Cambia este valor para ajustar la altura de la imagen */
+  background: #F2F2F2;
+}
+
+.logo-container img {
+  width: 250px;
+  height: auto;
+}
+
+.date-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.date-container {
+  text-align: center;
+}
+
+.date-container h1, .date-container p {
+  margin: 0;
+}
+
+.date-container h1 {
+  font-size: 6rem;
+  color: #333;
+}
+
+.date-container p {
+  font-size: 3rem;
+  color: #5c5959;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.img-container {
+  width: 100vw;
+  height: calc(100vh - 80px); /* Ajusta este valor para dejar más espacio para la imagen */
+  background-image: url('images/montaje.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+}
+
+
+#clock {
+  font-size: 4rem;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+
+.date-container #clock {
+  font-size: 7rem;
+  margin-top: 30px;
+}
