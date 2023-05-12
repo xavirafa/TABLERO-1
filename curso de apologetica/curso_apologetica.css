@@ -9,7 +9,12 @@ body {
   color: #333;
   line-height: 1.6;
   background-color: #f8f9fa;
+  background-image: url('vaticano.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 /* Estiliza el encabezado */
 header {
