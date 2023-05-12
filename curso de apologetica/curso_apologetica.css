@@ -156,11 +156,11 @@ header a {
   /* Ajustes responsivos para dispositivos más pequeños */
   @media screen and (max-width: 768px) {
     .corner-image {
-      width: 20px;
+      width: 45px;
     }
   
     header h1 {
-      font-size: 1rem;
+      font-size: 2rem;
     }
 }
 
