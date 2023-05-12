@@ -104,4 +104,9 @@ header {
     height: auto;
   }
   
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
   
