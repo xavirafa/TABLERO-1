@@ -154,15 +154,16 @@ header a {
   }
 
   /* Ajustes responsivos para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .corner-image {
-      width: 100px;
+      width: 50px;
     }
   
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
-  }
+}
+
 
   .modal {
     display: none;
