@@ -1,6 +1,6 @@
 .container {
-  max-width: 1200px; /* ajusta el valor a la anchura deseada */
-  margin: 0 auto; /* añade un margen automático */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body, html {
@@ -18,26 +18,25 @@ body, html {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px; /* Cambia este valor para ajustar la altura de la imagen */
+  padding: 20px;
   background: #F2F2F2;
-}
-
-.logo-container img {
-  width: 250px;
-  height: auto;
+  position: relative;
 }
 
 .date-wrapper {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.date-container {
   text-align: center;
 }
+
+.date-wrapper {
+  position: absolute;
+  left: 60px; /* Ajusta este valor para mover la fecha hacia la izquierda */
+  top: 320%;
+  transform: translateY(-50%);
+  text-align: center; /* Cambia esto a 'left' para alinear la fecha a la izquierda */
+}
+
 
 .date-container h1, .date-container p {
   margin: 0;
@@ -55,16 +54,14 @@ body, html {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .img-container {
   width: 100vw;
-  height: calc(100vh - 80px); /* Ajusta este valor para dejar más espacio para la imagen */
+  height: calc(100vh - 80px);
   background-image: url('images/montaje.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center 10%;
+  background-position: center 85%; /* Ajustado para mover la imagen hacia abajo */
 }
-
 
 #clock {
   font-size: 4rem;
@@ -74,8 +71,19 @@ body, html {
   text-align: center;
 }
 
-
 .date-container #clock {
   font-size: 7rem;
   margin-top: 30px;
 }
+
+.video-container {
+  position: absolute;
+  top: 5px;  /* Ajusta estos valores para mover el video */
+  right: 5px;
+}
+
+.video-container video {
+  width: 750px;  /* Ajusta este valor para cambiar el tamaño del video */
+  height: auto;
+}
+
