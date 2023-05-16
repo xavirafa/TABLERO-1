@@ -31,8 +31,8 @@ body, html {
 
 .date-wrapper {
   position: absolute;
-  left: 60px; /* Ajusta este valor para mover la fecha hacia la izquierda */
-  top: 320%;
+  left: 120px; /* Ajusta este valor para mover la fecha hacia la izquierda */
+  top: 360%;
   transform: translateY(-50%);
   text-align: center; /* Cambia esto a 'left' para alinear la fecha a la izquierda */
 }
@@ -43,30 +43,30 @@ body, html {
 }
 
 .date-container h1 {
-  font-size: 6rem;
-  color: #333;
+  font-size: 10rem;
+  color: #df4e4e;
 }
 
 .date-container p {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #5c5959;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
 
 .img-container {
-  width: 97vw;  /* Se ajusta al 90% del ancho de la ventana */
+  width: 100vw;  /* Se ajusta al 90% del ancho de la ventana */
   height: calc(100vh - 80px);
   background-image: url('images/montaje.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center 65%; /* La imagen se mueve hacia abajo un 10% */
+  background-position: center 70%; /* La imagen se mueve hacia abajo un 10% */
   margin: auto; /* Centra el elemento horizontalmente */
 }
 
 
 #clock {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 20px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -74,18 +74,18 @@ body, html {
 }
 
 .date-container #clock {
-  font-size: 7rem;
+  font-size: 8rem;
   margin-top: 30px;
 }
 
 .video-container {
   position: absolute;
   top: 10px;  /* Ajusta estos valores para mover el video */
-  right: 30px;
+  right: 5px;
 }
 
 .video-container video {
-  width: 750px;  /* Ajusta este valor para cambiar el tamaño del video */
+  width: 850px;  /* Ajusta este valor para cambiar el tamaño del video */
   height: auto;
 }
 
