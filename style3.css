@@ -55,13 +55,15 @@ body, html {
 }
 
 .img-container {
-  width: 100vw;
+  width: 97vw;  /* Se ajusta al 90% del ancho de la ventana */
   height: calc(100vh - 80px);
   background-image: url('images/montaje.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center 85%; /* Ajustado para mover la imagen hacia abajo */
+  background-position: center 65%; /* La imagen se mueve hacia abajo un 10% */
+  margin: auto; /* Centra el elemento horizontalmente */
 }
+
 
 #clock {
   font-size: 4rem;
@@ -78,8 +80,8 @@ body, html {
 
 .video-container {
   position: absolute;
-  top: 5px;  /* Ajusta estos valores para mover el video */
-  right: 5px;
+  top: 10px;  /* Ajusta estos valores para mover el video */
+  right: 30px;
 }
 
 .video-container video {
