@@ -76,34 +76,34 @@ body {
 }
 
 h1 {
-  color: #FFFFFF;
-  font-size: 20rem;
+  color: #4d4d4d;
+  font-size: 16rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 50px 0 0 0;
-  text-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
 
 }
 
 p {
-  color: #fcd31c;
-  font-size: 9rem;
+  color: #4d4d4d;
+  font-size: 7rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin: 5px 0;
-  text-shadow: 0px 0px 20px black;
+  margin: 4px 0;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 
 }
 
 #day {
   font-weight: bold;
-  text-shadow: 0px 0px 40px black;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
 
 }
 
 #motivational-message {
   color: #2e2c2c; /* Puedes cambiar este color si deseas uno diferente */
-  font-size: 10rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad desde lejos */
+  font-size: 8.5rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad desde lejos */
   font-family: 'Montserrat', sans-serif; /* Cambia la fuente a Roboto */
   font-weight: bold; /* Ajusta el grosor de la fuente */
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 2); /* Mantiene la sombra de texto existente */
