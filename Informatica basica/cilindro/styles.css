@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../../images/figuras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  h1 {
+    margin-top: 30px;
+  }
+  
+  form {
+    margin-top: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
