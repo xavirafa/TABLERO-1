@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programas</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      background-image: url('images/fondo1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0px;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 0px;
+      border-radius: 0px;
+    }
+    
+    h1 {
+      margin-bottom: 30px;
+    }
+    
+    .btn {
+      display: inline-block;
+      width: 150px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SELECCIONA UN PROGRAMA:</h1>
+    <a href="Informatica basica/cilindro/cilindro.html" target="_blank" class="btn">Calcular volumen de un Cilindro</a>
+    <a href="Informatica basica/descuentos/descuentos.html" target="_blank" class="btn">Calcular y mostrar descuentos en prendas de ropa</a>
+  </div>
+</body>
+</html>
