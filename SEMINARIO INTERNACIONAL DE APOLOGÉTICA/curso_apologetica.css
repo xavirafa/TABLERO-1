@@ -1,0 +1,206 @@
+/* Importa fuentes de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Estilos básicos y configuración de fuentes */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  background-image: url('vaticano.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Estiliza el encabezado */
+header {
+  background-color: #3f51b5;
+  padding: 0.4rem 0;
+  text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive; /* agregar una fuente con estilo cursivo */
+  }
+  
+
+/* Estilos para el contenido principal */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Estilos para las secciones de clases */
+section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: #3f51b5;
+  border: 2px solid #3f51b5;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section a:hover {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #3f51b5;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Estilos para las imágenes de las esquinas */
+.corner-image {
+    position: absolute;
+    width: 200px;
+  }
+  
+  .top-left {
+    top: 10;
+    left: 0;
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  /* Estilos para la barra de navegación interactiva */
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .nav-menu li {
+    margin: 0 0.5rem;
+  }
+  
+  .nav-menu a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #3f51b5;
+    background-color: #ffffff; /* Agrega color de fondo blanco a los enlaces del menú de navegación */
+    border: 2px solid #3f51b5;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  .nav-menu a:hover {
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  
+  /* Estilos para los enlaces del encabezado */
+header a {
+    color: #ffffff;
+  }
+  
+  header a:hover {
+    color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Ajustes responsivos para dispositivos más pequeños */
+  @media screen and (max-width: 768px) {
+    .corner-image {
+      width: 70px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+}
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+
+  .modal-image {
+    max-width: 130%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
