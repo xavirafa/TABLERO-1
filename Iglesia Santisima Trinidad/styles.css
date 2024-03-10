@@ -1,80 +1,105 @@
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #35424a; /* Azul oscuro */
-    color: #ffffff; /* Blanco */
-    display: flex;
-    justify-content: flex-start; /* Alinea los elementos desde el principio (lado izquierdo) */
-    align-items: center;
-    padding: 10px 20px; /* Espaciado interno */
-    width: 100%; /* Ancho al 100% */
-    position: fixed; /* Fija la barra de navegación */
-    top: 0; /* Alinea la barra de navegación en la parte superior */
-    left: 0; /* Alinea la barra de navegación en la esquina izquierda */
-    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    background-color: #031062;
+    color: white;
+    padding: 10px 0; /* Ajustamos el espacio arriba y abajo */
+    position: fixed;
+    top: 0;
+    width: 100%; /* La barra de navegación ocupa todo el ancho */
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
-/* Estilos para el botón del menú */
-.menu-btn {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 24px; /* Ajustamos el tamaño del icono del menú */
-    cursor: pointer;
-    margin-right: 10px; /* Añade un margen a la derecha para separar del borde de la barra */
-}
-
-/* Estilos para el menú desplegable */
 .menu {
-    display: block;
     list-style-type: none;
-    padding: 20px; /* Aumentamos el relleno alrededor del menú */
-    background-color: #ffffff; /* Fondo blanco */
-    width: auto; /* Ancho automático para adaptarse al contenido */
-    position: absolute; /* Posición absoluta para desplegar el menú correctamente */
-    top: 100%; /* Alinea el menú justo debajo del botón del menú */
-    left: 0; /* Alinea el menú a la izquierda */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    white-space: nowrap; /* Evita que el menú despliegue en varias líneas */
-    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
-    max-height: calc(100vh - 50px); /* Altura máxima para que el menú sea scrollable */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
-    text-align: center; /* Centra los elementos del menú horizontalmente */
-    transition: max-width 0.3s ease, opacity 0.3s ease; /* Agregamos una transición para el desplazamiento y la opacidad */
-    max-width: 0; /* Ocultamos el menú inicialmente */
-    opacity: 0; /* Hacemos que el menú esté completamente transparente */
-    pointer-events: none; /* Desactivamos los eventos del ratón para el menú oculto */
-}
-
-.menu.show {
-    max-width: 200px; /* Mostramos el menú al cambiar el ancho máximo */
-    opacity: 1; /* Hacemos que el menú sea completamente visible */
-    pointer-events: auto; /* Activamos los eventos del ratón para el menú visible */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Muestra los elementos en línea */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
 .menu li {
-    padding: 10px 0;
+    margin-right: 20px; /* Aumentamos un poco el espacio entre los elementos */
+    text-align: center; /* Centra el texto dentro de cada elemento de la lista */
 }
 
-.menu li a {
-    display: block;
-    color: #35424a; /* Azul oscuro invertido para el texto */
+.menu a {
     text-decoration: none;
-    padding: 5px 20px; /* Aumentar el espacio del texto */
-    transition: background-color 0.3s;
+    color: white;
+    font-family: "Times New Roman", Times, serif; /* Cambiamos la fuente a Times New Roman */
+    font-size: 18px; /* Reducimos el tamaño de la fuente */
+    transition: all 0.3s ease; /* Agregamos una transición suave */
 }
 
-.menu li a:hover {
-    background-color: #cccccc; /* Gris claro */
+.menu a:hover {
+    color: #ffc107; /* Cambiamos el color al pasar el mouse */
+    transform: scale(1.1); /* Aumentamos ligeramente el tamaño */
 }
 
-/* Estilos para el banner */
-.banner {
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px; /* Espacio entre el botón de menú y el borde izquierdo */
+}
+
+.close-btn {
+    display: none;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #091C8F;
+    color: white;
+    padding: 30px 20px; /* Ajusta el espaciado interno según sea necesario */
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    z-index: 1000;
+    left: 0; /* Alinea el pie de página desde la izquierda */
+}
+
+/* Estilo para el segmento específico del pie de página */
+.footer-bottom {
+    background-color: #101746; /* Cambia el color de fondo a #101746 */
+    padding-top: 20px;
     text-align: center;
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex-basis: 30%;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    margin-bottom: 10px;
+}
+
+.footer-left p, .footer-center ul, .footer-right p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Ajuste para el desplazamiento del pie de página */
+body {
+    margin-bottom: 120px; /* Ajusta este valor según el tamaño de la barra de navegación */
 }
