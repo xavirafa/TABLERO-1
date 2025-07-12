@@ -1,0 +1,80 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #35424a; /* Azul oscuro */
+    color: #ffffff; /* Blanco */
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos desde el principio (lado izquierdo) */
+    align-items: center;
+    padding: 10px 20px; /* Espaciado interno */
+    width: 100%; /* Ancho al 100% */
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* Alinea la barra de navegación en la parte superior */
+    left: 0; /* Alinea la barra de navegación en la esquina izquierda */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+/* Estilos para el botón del menú */
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px; /* Ajustamos el tamaño del icono del menú */
+    cursor: pointer;
+    margin-right: 10px; /* Añade un margen a la derecha para separar del borde de la barra */
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    display: block;
+    list-style-type: none;
+    padding: 20px; /* Aumentamos el relleno alrededor del menú */
+    background-color: #ffffff; /* Fondo blanco */
+    width: auto; /* Ancho automático para adaptarse al contenido */
+    position: absolute; /* Posición absoluta para desplegar el menú correctamente */
+    top: 100%; /* Alinea el menú justo debajo del botón del menú */
+    left: 0; /* Alinea el menú a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    white-space: nowrap; /* Evita que el menú despliegue en varias líneas */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    max-height: calc(100vh - 50px); /* Altura máxima para que el menú sea scrollable */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+    text-align: center; /* Centra los elementos del menú horizontalmente */
+    transition: max-width 0.3s ease, opacity 0.3s ease; /* Agregamos una transición para el desplazamiento y la opacidad */
+    max-width: 0; /* Ocultamos el menú inicialmente */
+    opacity: 0; /* Hacemos que el menú esté completamente transparente */
+    pointer-events: none; /* Desactivamos los eventos del ratón para el menú oculto */
+}
+
+.menu.show {
+    max-width: 200px; /* Mostramos el menú al cambiar el ancho máximo */
+    opacity: 1; /* Hacemos que el menú sea completamente visible */
+    pointer-events: auto; /* Activamos los eventos del ratón para el menú visible */
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu li a {
+    display: block;
+    color: #35424a; /* Azul oscuro invertido para el texto */
+    text-decoration: none;
+    padding: 5px 20px; /* Aumentar el espacio del texto */
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #cccccc; /* Gris claro */
+}
+
+/* Estilos para el banner */
+.banner {
+    width: 100%;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
